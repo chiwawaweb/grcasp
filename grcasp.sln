@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grcasp", "grcasp\grcasp.csproj", "{0EE32DDA-D7DC-4D9E-B6FA-4637527B48BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grcasp.Tests", "grcasp.Tests\grcasp.Tests.csproj", "{F36134AE-BB34-41AA-844C-F399F2DB479D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EE32DDA-D7DC-4D9E-B6FA-4637527B48BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE32DDA-D7DC-4D9E-B6FA-4637527B48BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE32DDA-D7DC-4D9E-B6FA-4637527B48BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE32DDA-D7DC-4D9E-B6FA-4637527B48BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F36134AE-BB34-41AA-844C-F399F2DB479D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36134AE-BB34-41AA-844C-F399F2DB479D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36134AE-BB34-41AA-844C-F399F2DB479D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36134AE-BB34-41AA-844C-F399F2DB479D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4ABDBC3-5A35-4CEC-A03A-9D2C26A0FF3B}
+	EndGlobalSection
+EndGlobal
