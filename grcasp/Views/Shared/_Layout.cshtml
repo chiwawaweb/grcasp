@@ -25,6 +25,10 @@
                         <ul class="nav navbar-nav">
                             <li>@Html.ActionLink("Ventes", "Index", "Ventes")</li>
                             <li>@Html.ActionLink("Règlements", "Index", "Reglements")</li>
+                            <ul class="dropdown-menu">
+                                <li>test</li>
+                                <li>test 2</li>
+                            </ul>
                             <li>@Html.ActionLink("Achats", "Index", "Achats")</li>
                             <li>@Html.ActionLink("Stock / Articles", "Index", "Stock")</li>
                             <li>@Html.ActionLink("Paramètres", "Index", "Setup")</li>
@@ -37,13 +41,10 @@
         </header>
         <div class="row">
             <nav class="col-sm-2">
-                <h3>Menu</h3>
-
                 <div class="btn-group-vertical btn-block">
                     <a class="btn btn-block text-left btn-info" href="#">Clients</a>
                     <a class="btn btn-block btn-info" href="#">Règlements</a>
                     <a class="btn btn-block btn-info" href="#">Articles</a>
-
                 </div>
             </nav>
             <section class="col-sm-10">
