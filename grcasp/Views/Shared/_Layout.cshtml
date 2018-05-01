@@ -9,56 +9,55 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("GRC Evo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="container">
+        <header class="row navbar navbar-inverse navbar-fixed-top">
+            <div class="col-lg-12">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("GRC Evo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Ventes", "Index", "Ventes")</li>
+                            <li>@Html.ActionLink("Règlements", "Index", "Reglements")</li>
+                            <li>@Html.ActionLink("Achats", "Index", "Achats")</li>
+                            <li>@Html.ActionLink("Stock / Articles", "Index", "Stock")</li>
+                            <li>@Html.ActionLink("Paramètres", "Index", "Setup")</li>
+                            <!--<li>@Html.ActionLink("À propos de", "About", "Home")</li>-->
+                            <!--<li>@Html.ActionLink("Contact", "Contact", "Home")</li> -->
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Ventes", "Index", "Ventes")</li>
-                    <li>@Html.ActionLink("Règlements", "Index", "Reglements")</li>
-                    <li>@Html.ActionLink("Achats", "Index", "Achats")</li>
-                    <li>@Html.ActionLink("Stock / Articles", "Index", "Stock")</li>
-                    <li>@Html.ActionLink("Paramètres", "Index", "Setup")</li>
-                    <!--<li>@Html.ActionLink("À propos de", "About", "Home")</li>-->
-                    <!--<li>@Html.ActionLink("Contact", "Contact", "Home")</li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
+        </header>
+        <div class="row">
+            <nav class="col-sm-2">
+                <h3>Menu</h3>
 
+                <div class="btn-group-vertical btn-block">
+                    <a class="btn btn-block text-left btn-info" href="#">Clients</a>
+                    <a class="btn btn-block btn-info" href="#">Règlements</a>
+                    <a class="btn btn-block btn-info" href="#">Articles</a>
 
-    <div class="row">
-        <div class="col-md-2">
-            <nav>
-
-                Menu
-                <li>menu 1</li>
-                <li>menu 2</li>
-                <li>menu 3</li>
-                <li>menu 4</li>
+                </div>
             </nav>
-
+            <section class="col-sm-10">
+                <div class="col-sm-10 body-content container">
+                    @RenderBody()
+                </div>
+            </section>
         </div>
-        <div class="col-md-10 body-content container">
-            @RenderBody()
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-sm-12">
-            <hr />
-            <footer>
+        <footer class="row">
+            <div class="col-lg-12">
+                <hr />
                 <p>&copy; @DateTime.Now.Year - GRC Evo</p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
