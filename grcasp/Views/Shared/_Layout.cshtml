@@ -32,12 +32,33 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - GRC Evo</p>
-        </footer>
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <nav>
+
+                Menu
+                <li>menu 1</li>
+                <li>menu 2</li>
+                <li>menu 3</li>
+                <li>menu 4</li>
+            </nav>
+
+        </div>
+        <div class="col-md-10 body-content container">
+            @RenderBody()
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - GRC Evo</p>
+            </footer>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
