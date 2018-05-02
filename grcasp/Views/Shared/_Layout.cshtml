@@ -9,48 +9,50 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="container">
-        <!--<header class="row navbar navbar-inverse navbar-fixed-top">-->
-
-
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="collapse navbar-collapse" id="oNavigation">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Section A <b class="caret"></b> </a>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="collapse navbar-collapse" id="oNavigation">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Section A <b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Deuxième niveau</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Section B <b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">Sous-section</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Deuxième niveau</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Section B <b class="caret"></b> </a>
-                            <ul class="dropdown-menu">
+                                <li><a href="#">Troisième niveau</a></li>
+                                <li><a href="#">Troisième niveau</a></li>
                                 <li class="dropdown-submenu">
-                                    <a tabindex="-1" href="#">Sous-section</a>
+                                    <a href="#">Sous-section</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Troisième niveau</a></li>
-                                        <li><a href="#">Troisième niveau</a></li>
+                                        <li><a href="#">Quatrième niveau</a></li>
                                         <li class="dropdown-submenu">
                                             <a href="#">Sous-section</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#">Quatrième niveau</a></li>
-                                                <li class="dropdown-submenu">
-                                                    <a href="#">Sous-section</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#">Cinquième niveau</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="#">Cinquième niveau</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Deuxième niveau</a></li>
                             </ul>
                         </li>
+                        <li><a href="#">Deuxième niveau</a></li>
                     </ul>
-                </div>
-            </nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!--<header class="row navbar navbar-inverse navbar-fixed-top">-->
+
+
+            
 
             <!--
             <div class="col-lg-12">
