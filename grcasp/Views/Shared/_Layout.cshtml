@@ -20,38 +20,152 @@
                     </button>
                     <div class="collapse navbar-collapse" id="oNavigation">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">GRC Evo</a></li>
+                            <li>@Html.ActionLink("GRC Evo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+                            <!-- Ventes -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ventes <b class="caret"></b> </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="@Url.Action("Devis", "Ventes")">Devis</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Documents de ventes</a>
+                                        <ul class="dropdown-menu">
+                                            <li>@Html.ActionLink("Devis", "Devis", "Ventes")</li>
+                                            <li>@Html.ActionLink("Commandes", "Commandes", "Ventes")</li>
+                                            <li>@Html.ActionLink("Factures", "Factures", "Ventes")</li>
+                                            <li><a href="#">Règlements</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Tickets</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Clients</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Clients</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Prospects</a></li>
+                                            <li><a href="#">Clients</a></li>
+                                            <li><a href="#">Contacts</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Familles clients/prospects</a></li>
+                                            <li><a href="#">Sous-familles clients/prospects</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Historique clients/articles</a></li>
+                                            <li><a href="#">Statistiques</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Règlements</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Echéancier</a></li>
+                                            <li><a href="#">Règlements</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
+                            <!-- Règlements -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Règlements <b class="caret"></b> </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-submenu">
-                                        <a tabindex="-1" href="#">Sous-section</a>
+                                        <a tabindex="-1" href="#">Clients</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Troisième niveau</a></li>
-                                            <li><a href="#">Troisième niveau</a></li>
-                                            <li class="dropdown-submenu">
-                                                <a href="#">Sous-section</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Quatrième niveau</a></li>
-                                                    <li class="dropdown-submenu">
-                                                        <a href="#">Sous-section</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a href="#">Cinquième niveau</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="#">Echéancier</a></li>
+                                            <li><a href="#">Règlements</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Deuxième niveau</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Fournisseurs</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Echéancier</a></li>
+                                            <li><a href="#">Règlements</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
+                            <!-- Achats -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Achats <b class="caret"></b> </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Documents d'achats</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Demandes de prix</a></li>
+                                            <li><a href="#">Commandes</a></li>
+                                            <li><a href="#">Bons de réception</a></li>
+                                            <li><a href="#">Bons de retour</a></li>
+                                            <li>@Html.ActionLink("Factures", "Factures", "Achats")</li>
+                                            <li><a href="#">Avoirs</a></li>
+                                            <li><a href="#">Factures d'acomptes</a></li>
+                                            <li><a href="#">Factures d'avoirs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Fournisseurs</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Fournisseurs</a></li>
+                                            <li><a href="#">Contacts</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Familles fournisseurs</a></li>
+                                            <li><a href="#">Sous-familles fournisseurs</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Historique fournisseurs/articles</a></li>
+                                            <li><a href="#">Statistiques</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Règlements</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Echéancier</a></li>
+                                            <li><a href="#">Règlements</a></li>
+                                            <li><a href="#">Décaissements</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Stocks / Articles -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Stocks / Articles <b class="caret"></b> </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Documents de stock</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Bons d'entrée</a></li>
+                                            <li><a href="#">Bons de sortie</a></li>
+                                            <li><a href="#">Inventaires</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Articles</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Articles</a></li>
+                                            <li><a href="#">Familles d'articles</a></li>
+                                            <li><a href="#">Sous-familles d'articles</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Historique Historique clients/articles</a></li>
+                                            <li><a href="#">Historique fournisseurs/articles</a></li>
+                                            <li><a href="#">Statistiques</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Tarifs clients</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Tarifs et promotions clients</a></li>
+                                            <li><a href="#">Catégories tarifaires clients</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="1" href="#">Tarifs fournisseurs</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Tarifs et promotions fournisseurs</a></li>
+                                            <li><a href="#">Catégories tarifaires fournisseurs</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Paramètres -->
+                            <li><a href="#">Paramètres</a></li>
+
                         </ul>
                     </div>
                 </nav>

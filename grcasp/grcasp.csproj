@@ -196,6 +196,8 @@
     <Content Include="Views\Achats\Index.cshtml" />
     <Content Include="Views\Reglements\Index.cshtml" />
     <Content Include="Views\Stock\Index.cshtml" />
+    <Content Include="Views\Ventes\Devis.cshtml" />
+    <Content Include="Views\Achats\Factures.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

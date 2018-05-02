@@ -13,5 +13,10 @@ namespace grcasp.Controllers
         {
             return View();
         }
+
+        public ActionResult Factures()
+        {
+            return View();
+        }
     }
 }
