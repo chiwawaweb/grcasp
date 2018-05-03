@@ -18,5 +18,10 @@ namespace grcasp.Controllers
         {
             return View();
         }
+
+        public ActionResult NouveauDevis()
+        {
+            return View();
+        }
     }
 }

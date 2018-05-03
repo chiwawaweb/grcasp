@@ -29,13 +29,13 @@
                                         <a tabindex="-1" href="#">Documents de ventes</a>
                                         <ul class="dropdown-menu">
                                             <li>@Html.ActionLink("Devis", "Devis", "Ventes")</li>
-                                            <li>@Html.ActionLink("Commandes", "Commandes", "Ventes")</li>
-                                            <li>@Html.ActionLink("Factures", "Factures", "Ventes")</li>
-                                            <li><a href="#">Règlements</a></li>
+                                            <li class="disabled">@Html.ActionLink("Commandes", "Commandes", "Ventes")</li>
+                                            <li class="disabled">@Html.ActionLink("Factures", "Factures", "Ventes")</li>
+                                            <li class="disabled"><a href="#">Règlements</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Tickets</a></li>
+                                            <li class="disabled"><a href="#">Tickets</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Clients</a></li>
+                                            <li class="disabled"><a href="#">Clients</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
