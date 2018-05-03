@@ -1,4 +1,5 @@
 ﻿using grcasp.Models;
+using grcasp.ViewModels.Ventes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace grcasp.Controllers
 {
     public class VentesController : Controller
     {
+        Dal dal = new Dal();
         // GET: Ventes
         public ActionResult Index()
         {
@@ -17,9 +19,13 @@ namespace grcasp.Controllers
 
         public ActionResult Devis()
         {
-            CreerDevisTest();
+            DevisViewModel vm = new DevisViewModel
+            {
+                ListeDesDevis = dal.ObtientTousLesDevis()
 
-            return View();
+                
+            };
+            return View(vm);
         }
 
         public ActionResult NouveauDevis()

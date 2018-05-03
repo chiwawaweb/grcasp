@@ -6,3 +6,20 @@
 <h2>Ventes / Devis</h2>
 
 @Html.ActionLink("Nouveau devis","NouveauDevis","Ventes")
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Téléphone</th>
+    </tr>
+    @{
+        foreach (var devis in Model.ListeDesDevis)
+        {
+            <tr>
+                <td>@devis.PrefixeNumero</td>
+                <td>@devis.Numero</td>
+            </tr>
+        }
+    }
+
+</table>

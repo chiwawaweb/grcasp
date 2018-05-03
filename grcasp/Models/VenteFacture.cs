@@ -5,9 +5,11 @@ using System.Web;
 
 namespace grcasp.Models
 {
-    public class Devis
+    public class VenteFacture
     {
         public int Id { get; set; }
-        public string Numero { get; set; }
+        public string PrefixeNumero { get; set; }
+        public int Numero { get; set; }
+        public string Client { get; set; }
     }
 }

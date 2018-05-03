@@ -16,18 +16,18 @@ namespace grcasp.Models
 
         public void CreerDevisTest(string numero)
         {
-            bdd.Devis.Add(new Devis { Numero = numero });
+            bdd.VentesDevis.Add(new VenteDevis { Numero = numero });
             bdd.SaveChanges();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            bdd.Dispose();
         }
 
-        public List<Devis> ObtientTousLesDevis()
+        public List<VenteDevis> ObtientTousLesDevis()
         {
-            return bdd.Devis.ToList();
+            return bdd.VentesDevis.ToList();
         }
     }
 }

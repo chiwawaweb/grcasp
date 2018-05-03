@@ -9,6 +9,6 @@ namespace grcasp.Models
     interface IDal : IDisposable
     {
         void CreerDevisTest(string numero);
-        List<Devis> ObtientTousLesDevis();
+        List<VenteDevis> ObtientTousLesDevis();
     }
 }
