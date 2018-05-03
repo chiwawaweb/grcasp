@@ -1,4 +1,5 @@
-﻿using System;
+﻿using grcasp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,8 @@ namespace grcasp.Controllers
 
         public ActionResult Devis()
         {
+            CreerDevisTest();
+
             return View();
         }
 

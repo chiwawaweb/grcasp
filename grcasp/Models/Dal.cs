@@ -14,6 +14,12 @@ namespace grcasp.Models
             bdd = new BddContext();
         }
 
+        public void CreerDevisTest(string numero)
+        {
+            bdd.Devis.Add(new Devis { Numero = numero });
+            bdd.SaveChanges();
+        }
+
         public void Dispose()
         {
             throw new NotImplementedException();
@@ -21,7 +27,7 @@ namespace grcasp.Models
 
         public List<Devis> ObtientTousLesDevis()
         {
-            throw new NotImplementedException();
+            return bdd.Devis.ToList();
         }
     }
 }
