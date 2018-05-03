@@ -11,9 +11,12 @@ namespace grcasp.Controllers
     public class VentesController : Controller
     {
         Dal dal = new Dal();
+        
         // GET: Ventes
         public ActionResult Index()
         {
+            
+
             return View();
         }
 
@@ -22,8 +25,6 @@ namespace grcasp.Controllers
             DevisViewModel vm = new DevisViewModel
             {
                 ListeDesDevis = dal.ObtientTousLesDevis()
-
-                
             };
             return View(vm);
         }

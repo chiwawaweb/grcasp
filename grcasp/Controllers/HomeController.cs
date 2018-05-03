@@ -1,4 +1,5 @@
-﻿using System;
+﻿using grcasp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,11 @@ namespace grcasp.Controllers
 {
     public class HomeController : Controller
     {
+        Dal dal = new Dal();
+
         public ActionResult Index()
         {
+            dal.CreerDevisTest("1972");
             return View();
         }
 

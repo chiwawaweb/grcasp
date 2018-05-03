@@ -16,7 +16,7 @@ namespace grcasp.Models
 
         public void CreerDevisTest(string numero)
         {
-            bdd.VentesDevis.Add(new VenteDevis { Numero = numero });
+            bdd.VentesDevis.Add(new VenteDevis { Numero = 562 });
             bdd.SaveChanges();
         }
 

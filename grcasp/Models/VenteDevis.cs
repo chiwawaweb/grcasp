@@ -9,6 +9,6 @@ namespace grcasp.Models
     {
         public int Id { get; set; }
         public string PrefixeNumero { get; set; }
-        public string Numero { get; set; }
+        public int Numero { get; set; }
     }
 }
