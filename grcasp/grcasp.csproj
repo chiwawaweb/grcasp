@@ -152,6 +152,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AchatsController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReglementsController.cs" />
     <Compile Include="Controllers\SetupController.cs" />
@@ -219,6 +220,7 @@
     <Content Include="Views\Ventes\Devis.cshtml" />
     <Content Include="Views\Achats\Factures.cshtml" />
     <Content Include="Views\Ventes\NouveauDevis.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

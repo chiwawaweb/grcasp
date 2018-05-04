@@ -35,14 +35,14 @@
                                             <li role="separator" class="divider"></li>
                                             <li class="disabled"><a href="#">Tickets</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li class="disabled"><a href="#">Clients</a></li>
+                                            <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
                                         <a tabindex="-1" href="#">Clients</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Prospects</a></li>
-                                            <li><a href="#">Clients</a></li>
+                                            <li>@Html.ActionLink("Prospects", "Prospects", "Clients")</li>
+                                            <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
                                             <li><a href="#">Contacts</a></li>
                                             <li role="separator" class="divider"></li>
                                             <li><a href="#">Familles clients/prospects</a></li>
