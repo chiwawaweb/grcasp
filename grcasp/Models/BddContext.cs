@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Web;
+using grcasp.Migrations;
 
 namespace grcasp.Models
 {
@@ -23,6 +26,11 @@ namespace grcasp.Models
             {
                 base.Seed(context);
             }
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<BddContext, grcasp.Migrations.Configuration>());
         }
     }
 }

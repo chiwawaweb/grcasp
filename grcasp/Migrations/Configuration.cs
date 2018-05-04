@@ -11,7 +11,7 @@ namespace grcasp.Migrations
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
-            ContextKey = "grcasp.Models.BddContext";
+            //ContextKey = "grcasp.Models.BddContext";
         }
 
         protected override void Seed(grcasp.Models.BddContext context)
