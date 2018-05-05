@@ -19,6 +19,7 @@ namespace grcasp.Models
         public DbSet<VenteDevis> VentesDevis { get; set; }
         public DbSet<VenteFacture> VentesFactures { get; set; }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<ClientCategorie> ClientsCategories { get; set; }
 
         public class ContextInitializer : DropCreateDatabaseIfModelChanges<BddContext>
         {

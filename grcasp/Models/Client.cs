@@ -8,6 +8,7 @@ namespace grcasp.Models
     public class Client
     {
         public int Id { get; set; }
+        public virtual ClientCategorie ClientCategorie { get; set; }
         public string PrefixeNumero { get; set; }
         public int Numero { get; set; }
         public bool Particulier { get; set; }
@@ -24,6 +25,8 @@ namespace grcasp.Models
         public string Tel2 { get; set; }
         public string TypeTel3 { get; set; }
         public string Tel3 { get; set; }
+        public string Email { get; set; }
+        public string Web { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
     }

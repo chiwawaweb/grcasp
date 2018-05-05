@@ -13,5 +13,15 @@ namespace grcasp.Controllers
         {
             return View();
         }
+
+        public ActionResult NouveauClient()
+        {
+            return View();
+        }
+
+        public ActionResult Prospects()
+        {
+            return View();
+        }
     }
 }
