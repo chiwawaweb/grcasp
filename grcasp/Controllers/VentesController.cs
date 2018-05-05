@@ -15,8 +15,6 @@ namespace grcasp.Controllers
         // GET: Ventes
         public ActionResult Index()
         {
-            
-
             return View();
         }
 

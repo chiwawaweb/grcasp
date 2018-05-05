@@ -8,7 +8,7 @@ namespace grcasp.Models
     public class Client
     {
         public int Id { get; set; }
-        public virtual ClientCategorie ClientCategorie { get; set; }
+        //public virtual ClientCategorie ClientCategorie { get; set; }
         public string PrefixeNumero { get; set; }
         public int Numero { get; set; }
         public bool Particulier { get; set; }

@@ -29,5 +29,10 @@ namespace grcasp.Models
         {
             return bdd.VentesDevis.ToList();
         }
+
+        public List<Client> ObtientTousLesClients()
+        {
+            return bdd.Clients.ToList();
+        }
     }
 }

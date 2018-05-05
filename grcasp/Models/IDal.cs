@@ -10,5 +10,6 @@ namespace grcasp.Models
     {
         void CreerDevisTest(string numero);
         List<VenteDevis> ObtientTousLesDevis();
+        List<Client> ObtientTousLesClients();
     }
 }
